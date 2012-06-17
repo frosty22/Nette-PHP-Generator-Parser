@@ -1,0 +1,21 @@
+Extending Nette/PhpGenerator - parser/reader in files
+
+
+
+** Description **
+Nette contains PhpGenerator which can generated PHP classes. This library can read exist file with classes.
+
+
+
+** Example **
+
+<?php
+$parser = new \Nette\Utils\PhpGenerator\Parser("filename.php");
+$phpfile = $parser->getPhpFile();
+
+// List of \Nette\Utils\PhpGenerator\ClassType, can modified them (methods, constants, parameters, etc.)
+var_dump($phpfile->classes);
+
+// Print PHP output of file
+echo (string)$parser;
+?>

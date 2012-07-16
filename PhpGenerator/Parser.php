@@ -1,6 +1,6 @@
 <?php
 
-namespace Nette\Utils\PhpGenerator;
+namespace PhpGenerator;
 
 /**
  * Parser of PHP files with classes 
@@ -24,7 +24,7 @@ class Parser {
 	
 	/**
 	 * PHP file
-	 * @var \Nette\Utils\PhpGenerator\PhpFile 
+	 * @var \PhpGenerator\PhpFile 
 	 */
 	private $phpfile;
 	
@@ -49,7 +49,7 @@ class Parser {
 	public function getPhpFile()
 	{
 		if (!isset($this->phpfile)) {
-			$this->phpfile = new \Nette\Utils\PhpGenerator\PhpFile();
+			$this->phpfile = new PhpGenerator\PhpFile();
 
 			$classes = $this->getPhpClasses(); 
 			foreach ($classes as $namespace => $classes) {

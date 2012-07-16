@@ -10,7 +10,7 @@ Nette contains PhpGenerator which can generated PHP classes. This library can re
 ** Example **
 
 <?php
-$parser = new \Nette\Utils\PhpGenerator\Parser("filename.php");
+$parser = new \PhpGenerator\Parser("filename.php");
 $phpfile = $parser->getPhpFile();
 
 // List of \Nette\Utils\PhpGenerator\ClassType, can modified them (methods, constants, parameters, etc.)

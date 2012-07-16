@@ -1,6 +1,6 @@
 <?php
 
-namespace Nette\Utils\PhpGenerator;
+namespace PhpGenerator;
 
 /**
  * PHP File content - list of classes
